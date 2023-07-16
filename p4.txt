@@ -1,0 +1,76 @@
+package linkedlist;
+
+public class insertationanddeletion2 {
+    public static class node{
+        int data;
+        node next;
+        node prev;
+        // creating the constructor
+        node(int data){
+            this.data = data;
+            this.next = null;
+            this.prev = null;
+        }
+    }
+    public static node head;
+    public static node tail;
+    void insertathead(int data){
+        // create the new node
+        node temp = new node(data);
+        if(head == null){
+            head = tail = temp;
+            return;
+        }
+        temp.next = head;
+        head.prev = temp;
+        head = temp;
+    }
+    void print(){
+        node temp = head;
+        while(temp != null){
+            System.out.print(temp.data+"->");
+            temp = temp.next;
+        }
+        System.out.print("null");
+        System.out.println();
+    }
+
+    void inserting(int position,int data){
+        int count = 1;
+        if(position == 1){
+            insertathead(data);
+            return;
+        }
+        else{
+          //  node prev = null;
+            node curr = head;
+            while(count < position-1){
+                curr = curr.next;
+                count++;
+            }
+            // create the new node
+            node temp = new node(data);
+            temp.next = curr.next;
+            curr.next.prev = temp;
+            curr.next = temp;
+            temp.prev = curr;
+        }
+
+    }
+    public static void main(String[]args){
+        // here we are going to perform insertion opration
+        insertationanddeletion2 c = new insertationanddeletion2();
+        c.insertathead(12);
+        c.insertathead(13);
+        c.insertathead(14);
+        c.insertathead(15);
+        c.insertathead(16);
+        c.insertathead(18);
+        c.print();
+        System.out.println();
+        c.inserting(3,67);
+        c.print();
+
+
+    }
+}
