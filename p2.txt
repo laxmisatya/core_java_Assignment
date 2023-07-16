@@ -1,0 +1,22 @@
+package recursion;
+import java.util.Scanner;
+public class power {
+    static int p(int n,int m){
+        // base-case
+        if(m == 0){
+            return 1;
+        }
+        // sub-case
+        int pow = p(n,m-1);
+        //self-work
+        return pow*n;
+    }
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of base value");
+        int n = sc.nextInt();
+        System.out.println("enter the value of power value");
+        int m = sc.nextInt();
+        System.out.println(p(n,m));
+    }
+}

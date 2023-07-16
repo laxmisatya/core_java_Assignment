@@ -1,0 +1,19 @@
+package recursion;
+import java.util.Scanner;
+public class fibbonaci {
+    static int fibbo(int n){
+        // base case
+        if(n == 0 || n == 1){
+            return n;
+        }
+        // sub-case
+       int f =  fibbo(n-1) + fibbo(n-2);
+        return f;
+    }
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enetr the number of n");
+        int n = sc.nextInt();
+        System.out.println(fibbo(n));
+    }
+}
