@@ -1,0 +1,11 @@
+Ans -1 = o(n*n)
+
+Ans-2 = T(o) = 5;
+
+Ans-3 = T(n) = 5+n*c
+
+Ans-4 = log(n)
+
+Ans-5 = o(n*log(n))
+
+Ans-6 = o(log(n))
