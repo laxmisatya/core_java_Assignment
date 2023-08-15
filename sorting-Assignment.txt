@@ -1,0 +1,156 @@
+                                                        Sorting-Array----------->Assignment-question
+
+Ans-1 = package sortingseries;
+
+public class bubble {
+    static void bub(int arr[]){
+        int n = arr.length;
+        for(int i = 0;i<n;i++){
+            for(int j = 0;j<n-1;j++){
+                if(arr[i] > arr[j]){
+                    int temp ;
+                    temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+    }
+    public static void main(String []args){
+        int arr[]  = {1,8,4,6,3,9,2,4,98,7,5};
+        bub(arr);
+        for(int i = 0;i<arr.length;i++){
+            System.out.print(arr[i]+"   ");
+        }
+    }
+}
+
+
+
+
+Ans-2 = package sortingseries;
+
+public class selection {
+    // selection short ye hota hai ki pahele index ko min man lo aur jao dhud
+    //ke aao min element aur swap kardd
+    static void select(int arr[]){
+        int n = arr.length;
+        for(int i  = 0;i<n;i++) {
+            int min_index = i;
+            for (int j = i+1; j < n; j++) {
+                if (arr[j] > arr[min_index]) {
+                    min_index = j;
+                }
+            }
+
+            int temp;
+            temp = arr[min_index];
+            arr[min_index] = arr[i];
+            arr[i] = temp;
+        }
+
+    }
+    public static void main(String []args){
+        int arr[] = {8,6,4,2,6,9,4,1,2,8,9};
+        select(arr);
+        for(int i = 0;i<arr.length;i++){
+            System.out.print(arr[i]+"  ");
+        }
+    }
+}
+
+
+
+Ans-3 = package sortingseries;
+
+public class insertion {
+    static void insert(int arr[]){
+        int n = arr.length;
+        // insertion short me pehele element ko shorted mano aur phir dusare element ko
+        // pakdo aur usko tab-tak swap karo jabtak ki uski correct position na miljaye
+        for(int i = 0;i<n;i++){
+            for(int j = 1;j<n;j++){
+                if(arr[i]< arr[j]){
+                    while (arr[j] <arr[j-1]){
+                        int temp;
+                        temp = arr[j];
+                        arr[j] = arr[j-1];
+                        arr[j-1] = temp;
+                    }
+                }
+            }
+        }
+    }
+    public static void main(String []args){
+        int arr[] = {9,7,3,5,2,1,8,6,4,9,4};
+        insert(arr);
+        for(int i = 0;i<arr.length;i++){
+            System.out.print(arr[i]+ "  ");
+        }
+    }
+}
+
+Ans-4 =  package sortingseries;
+
+public class bubble {
+    static int  bub(int arr[]){
+        int n = arr.length;
+        int pass = 0;
+        for(int i = 0;i<n;i++){
+            for(int j = 0;j<n-i-1;j++){
+                if(arr[i] > arr[j]){
+                    int temp ;
+                    temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+
+            }
+            pass++;
+
+
+        }
+        return pass;
+    }
+    public static void main(String []args){
+        int arr[]  = {3,5,1,6,0};
+        System.out.println(bub(arr));
+    }
+}
+
+Ans-5 = package sortingseries;
+
+public class selection {
+    // selection short ye hota hai ki pahele index ko min man lo aur jao dhud
+    //ke aao min element aur swap kardd
+    static int  select(int arr[]){
+        int pass = 0;
+        int n = arr.length;
+        for(int i  = 0;i<n;i++) {
+            int min_index = i;
+            for (int j = i+1; j < n; j++) {
+                if (arr[j] < arr[min_index]) {
+                    min_index = j;
+                }
+            }
+          pass++;
+            int temp;
+            temp = arr[min_index];
+            arr[min_index] = arr[i];
+            arr[i] = temp;
+        }
+        return pass;
+
+    }
+    public static void main(String []args){
+        int arr[] = {3,5,1,6,0};
+
+        System.out.println(select(arr));
+//        for(int i = 0;i<arr.length;i++){
+//            System.out.print(arr[i]+"  ");
+//        }
+    }
+}
+
+
+

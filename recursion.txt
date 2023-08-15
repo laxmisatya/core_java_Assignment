@@ -1,0 +1,118 @@
+                                                      recursion---------------->Assignment-qustion about recusion
+
+
+
+
+Ans-1 = package recursion;
+
+import java.util.Scanner;
+
+public class sumofthenumber {
+    public static int sum(int n){
+        if(n == 1){
+            return n;
+        }
+        return n%10 + sum(n/10);
+    }
+    public static void main(String []args){
+        // here we are going to perform to find the sum of the digit
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the number");
+        int n = sc.nextInt();
+        System.out.println(sum(n));
+
+    }
+}
+
+
+
+Ans-2 = package recursion;
+
+import java.util.Scanner;
+
+public class sumalternate {
+    public static int altersum(int n){
+        if(n == 1){
+            return n;
+        }
+        if(n%2 == 0){
+          return   altersum(n-1) -n;
+        }
+        else{
+            return altersum(n-1)+n;
+        }
+
+    }
+    public static void main(String[]args){
+        // here we are going to perfrom to sum alternate sign
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the number");
+        int n = sc.nextInt();
+        System.out.println(altersum(n));
+
+    }
+}
+
+
+Ans-3 = package recursion;
+
+public class maxele {
+    public static int max(int arr[],int n){
+        if(n == 1){
+            return n;
+        }
+        return Math.max(n,max(arr,n-1));
+    }
+    public static void main(String []args){
+        // here we are going to perfrom to find the max element to the array
+        int arr[] = {1,2,7,8,6,5,4,3};
+        int n = arr.length;
+        System.out.println(max(arr,n));
+    }
+}
+
+
+
+Ans-4 =   package recursion;
+
+public class sumarray {
+    public static int sum(int arr[],int n){
+        if(n == 1){
+            return n;
+        }
+        return arr[n-1]+sum(arr,n-1);
+    }
+    public static void main(String []args){
+        // here we are going to perform to calculate the sum of the array
+        int arr[] = {1,2,3,8,9};
+        int n = arr.length;
+        System.out.println(sum(arr,n));
+    }
+}
+
+
+Ans-5 = 
+         package recursion;
+
+public class armstrongnumber {
+    public static int   arm(int num,int n){
+        if(num == 0){
+            return num;
+        }
+        int d = num%10;
+        return (int)Math.pow(d,n)+arm(num/10,n);
+    }
+    public static void main(String []args){
+        // here we are going to find the armstrong number
+        int num = 143;
+        int n = num%10;
+        if(num == arm(num,n)){
+            System.out.println("yes it is armstrong number");
+        }
+        else{
+            System.out.println("No this number is not armstrong number");
+        }
+
+
+    }
+}
