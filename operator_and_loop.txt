@@ -1,0 +1,78 @@
+                                    Assiginment solution ---------------->operator and loops
+
+Ans-1-> the conditionals operator is used to compare more than one boolean expression of example (&&) ans (||) ans (?:)
+
+Ans-2-> there are three types of operator  in java 
+   a>uniary operator
+   b>binary operator
+   c>ternary operator
+
+Ans-3->Switch statement is used to check more than one  statement .if no any case is check then last default is always check
+       each case of block check and the break is mendetaory
+
+Ans-4-> there are two priority of the arithmetic operator
+     heigh ->* / %
+     low  -> +-
+
+Ans-5-> if,else,else if,swith these are the conditionals statements
+       if is used to check the certaion condition is true or not
+       else condition is always check by if condition
+      else if condition is check if (if) condition of result is not true
+      swith condition is used to check multiple code blocks
+
+Ans-6-> the syntax of if else statement
+       if(// boolean condition){
+       // some code blocks
+      }
+     else{
+     // some code blocks
+      }
+  
+
+
+Ans-7->there are the itrative approach 
+
+ 1> for loop
+ 2> do while loop
+ 3> while loop
+
+Asn-8-> difference between do while and for loop
+     for loop-> this condition is check first and then execute the code
+             -> if single code there is no need of brakets
+             ->for loop is entry controll loop
+
+
+    do while->in this case firsty condition check ans then code execute
+            ->there is need of brakects if there is single line of code
+            ->for loop is exit controll loop
+
+
+
+Ans-9->public class printnumber{
+public static void main(String args []){
+for(int i = 0;i<= 10;i++){
+System.out.println(i+" ");
+}
+}
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

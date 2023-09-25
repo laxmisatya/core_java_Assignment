@@ -1,0 +1,109 @@
+assignment---------->question  Multithreading
+
+
+Ans-1 = multithreading is refer to within the process multiple task will perform simultaniously. it is important because it utilize maximum CPU
+
+Ans-2 = there are many benifit of the multithreading  
+
+     * if one thread get block other will not affect run indipendentily
+
+    * it save time parallism task
+
+    * allows effectiveness of the program and maximum cpu utilization
+
+Ans-3 = thread is the light wait process that can be managed by scaduler
+
+Ans-4 = there are two ways to impliment the thread first by extending the thread class and secind by implimenting the runnable interface
+package core_java;
+
+import java.util.Scanner;
+
+class myThread extends Thread{
+    public void run(){
+        System.out.println("claculation part start");
+        System.out.println("enter the first number :");
+        Scanner sc = new Scanner(System.in);
+        int s = sc.nextInt();
+        System.out.println("enter the second number :");
+        int w = sc.nextInt();
+        int res = s+w;
+        System.out.println("the sum of the s and w is  :"+res);
+        System.out.println("calculation part end");
+    }
+}
+class myThread1 extends Thread{
+    public void run(){
+        System.out.println("we are going to print the star pattern");
+        for(int i =0;i<4;i++){
+            for(int h = i;h<4;h++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+public class multithreading2 {
+    public static void main(String []args){
+        // here we are going to perfrom to create the thread by extend the thread class
+        System.out.println("firstlt main");
+        myThread m = new myThread();
+        myThread1 n = new myThread1();
+        m.start();
+        n.start();
+    }
+}
+
+
+package core_java;
+
+import java.util.Scanner;
+
+class mythread111 implements Runnable{
+    public void run(){
+        System.out.println("claculation part start");
+        System.out.println("enter the first number :");
+        Scanner sc = new Scanner(System.in);
+        int s = sc.nextInt();
+        System.out.println("enter the second number :");
+        int w = sc.nextInt();
+        int res = s+w;
+        System.out.println("the sum of the s and w is  :"+res);
+        System.out.println("calculation part end");
+    }
+}
+class mythread122 implements Runnable{
+    public void run(){
+        System.out.println("we are going to print the star pattern");
+        for(int i =0;i<4;i++){
+            for(int h = i;h<4;h++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+public class  multithreading4 {
+    public static void main(String []args){
+        // here we are going to understand the multithreading throungh ruannable
+        System.out.println("first main method executed");
+            mythread111 f = new mythread111();
+            mythread122 d = new mythread122();
+            Thread t1 = new Thread(f);
+            Thread t2 = new Thread(d);
+            t1.start();
+            t2.start();
+    }
+}
+
+
+
+
+Ans-5 = thread is light wait process it act's within the program and perfrom the multiple task
+        process is done and managed by operating system  it perform multiple task
+
+
+Ans-7 = wait() as the name suggest it is non-static method that cause the current thread to wait and go to
+        sleep until some other thread call the notify() or notifyAll() method object monitor(lock).
+
+    example Thread.sleep(3000);// in milisecond 
+
