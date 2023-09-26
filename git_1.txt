@@ -1,0 +1,25 @@
+                                                      Assignment-solution--------------->Git-github
+
+Ans-1->git is a version controll system in this system we can store our file and code in remote area . it is fexible to store and retrive the data and helps to colabrate with team
+
+Ans-2->the term version controll system refer to if any changes is happen in the project then these changes is tracketed and all the team member 
+       can see changes 
+
+Ans-3->Github uses git to offer internet hosting for version controll and software devlopment
+
+Ans-4->Github
+       gitlab
+       bitbuket
+       sourceforge
+
+Ans-5->a>local version controll system
+       b>centralized version controll system
+       c>distributed version controll system
+
+Ans-6->data duplication and data redundency are both possible
+       ->on any project ,collaboration is very simple
+       ->exelent network and disc perfromance
+
+Ans-7->git repository refer to describe the location where all the file are kept
+
+Ans-8->git init command is used to initilize the directory by which all the hidden file is kept
