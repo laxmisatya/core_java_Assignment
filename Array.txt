@@ -1,0 +1,23 @@
+Array java Assignment 
+
+Ans-1->in java the default value of the array is byte ,short,int,long = 0 and float,double = 0.0,boolean = false
+
+Ans-2->No,we can not pass the negative size in array
+
+Ans-3->Array is an object so,its memory allocate in the heap area
+
+Ans-4->the disadvantage of array is ::  it is static in nature and it has fixed size its size will not increase in run time
+
+Ans-5-> the Anonymus array is that array that which has no name
+        for example :: new int []{1,2,3,4,5,6,7}; 
+
+Ans-6-> by using loop(for loop,while loop,do while loop)
+        by using for each loop
+Ans-7->length function is used for array
+       length() functn is used for String
+    ex::
+    int arr[] = {1,2,3,4,5,6,7};
+     System.out.println(arr.length);
+    ex::
+     String name = "NIKHIL"
+      System.out.println(name.length());

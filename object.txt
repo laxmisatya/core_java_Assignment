@@ -1,0 +1,21 @@
+29th java method and object
+
+Ans-1-> in java object is created by the help of the constructor
+        ex:: class_name name = new class_name();
+
+Ans-2->new keyword is used for crete the object
+
+Ans-3-> there are two types of variable in java
+      1 = based on the types of the variable reperesented by the variable 
+       a) primitive
+       b)reference
+     2 = based on the position and behaviour 
+      a)local
+      b)static
+      c)instance
+
+Ans-4-> in the instance variable we need the object for access the data 
+        in the local variable we need not the object for access the data
+Ans-5-> in the instance variable  allocate in the heap
+         in the local variable allocate in the stack area
+Ans-6->method overloading refers to with same name of method we can use multiple function by changing its parameter

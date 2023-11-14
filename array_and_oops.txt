@@ -1,0 +1,106 @@
+                                      Assignment solution --------->Array and oject
+
+Arrays---------------->
+
+Ans-1-> byte,short,int,long = 0
+        float,dobble = 0.0
+         boolean = false
+         Any obect = null
+
+Ans-2->No,we can not pass negative index to the array so,it result negativeindxexception
+
+Ans-3->Arrays is obect in java so it store memory in heap
+
+Ans-4->Arrays is static data structure
+      ->Array store homogenious data struture
+      -> size of the array is limited
+
+Ans-5->Anonymous array is that type of array in which we can not assign the name
+       for example = new int{1,2,4,5,6,7};
+
+Ans-6-> using for loop
+        using for each loop
+
+Ans-7->the difference between length ans length() is that length  function is used for to find the length of array 
+       and length() function is used to find the length of the String
+      for example->
+              int arr[]= {1,2,3,4,5,6,7};
+             System.out.println(arr.length);// output => 7
+
+             String s = "Nikhil";
+             System.out.println(s,length());// output=>6
+
+
+
+object oriented programming----------------->
+
+
+Ans-1-> class is a blueprint in which all the data and method is define and in main we are create the object for accesing the 
+         method and data 
+         for example--> creation of the object
+                     class_name name = new class_name();
+
+Ans-2->new keyword is used to create the object by which it allocate memory to object and new keyword is also 
+       used to create the constructor
+ 
+Ans-3-> there are three types of variable in java
+       static variable
+       local variable
+       instance variable
+
+Ans-4-> instance variable is create in the class
+        without creation of object we can not able to access the data
+        memory of instance variable is stored on heap
+        it includes access modifier such as public private and protected
+      --------------------------------------------------------------------
+       local variable is created in the block method 
+       it has no need of creation of the obeject for accessing direct access is possible
+       memory of the locacal variable stored on the stack
+       it does not includes access modifier such as public private and protected
+
+Ans-5->Instence variable of memory allocate on heap and local variable locate on the stack
+
+
+Ans-6-> method overloading is the concept in which we overload the method by same name and same return type
+        but different(or same) types of argument, by this concept is code readibility is easy to understand
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
